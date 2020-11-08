@@ -4,12 +4,12 @@
 			"AmaryllisGardener"
 		]
 	},
-	"timeless-loggedinas": "Logged in as '''$1'''",
-	"timeless-notloggedin": "Nae logged in",
-	"timeless-userpage": "{{GENDER:$1|Uiser}} page",
-	"timeless-talkpage": "{{GENDER:$1|Uiser}} tauk",
-	"timeless-pagelog": "Page logs",
-	"timeless-more": "Mair",
-	"timeless-sitetools": "Wiki tuils",
-	"timeless-pageactions": "Page tuils"
+	"celestial-loggedinas": "Logged in as '''$1'''",
+	"celestial-notloggedin": "Nae logged in",
+	"celestial-userpage": "{{GENDER:$1|Uiser}} page",
+	"celestial-talkpage": "{{GENDER:$1|Uiser}} tauk",
+	"celestial-pagelog": "Page logs",
+	"celestial-more": "Mair",
+	"celestial-sitetools": "Wiki tuils",
+	"celestial-pageactions": "Page tuils"
 }

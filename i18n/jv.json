@@ -6,18 +6,18 @@
 			"Sumbukompor"
 		]
 	},
-	"timeless-anonymous": "Anonim",
-	"timeless-loggedinas": "Mlebu log minangka '''$1'''",
-	"timeless-notloggedin": "Durung mlebu log",
-	"timeless-userpage": "Kaca {{GENDER:$1|naraguna}}",
-	"timeless-talkpage": "Parembugan {{GENDER:$1|naraguna}}",
-	"timeless-pagelog": "Log kaca",
-	"timeless-more": "Liyané",
-	"timeless-sitetools": "Piranti wiki",
-	"timeless-pageactions": "Piranti kaca",
-	"timeless-userpagetools": "Piranti kaca naraguna",
-	"timeless-pagemisc": "Liyané",
-	"timeless-namespaces": "Mandhala aran",
-	"timeless-pagetools": "Laku kaca",
-	"timeless-languages": "Basa"
+	"celestial-anonymous": "Anonim",
+	"celestial-loggedinas": "Mlebu log minangka '''$1'''",
+	"celestial-notloggedin": "Durung mlebu log",
+	"celestial-userpage": "Kaca {{GENDER:$1|naraguna}}",
+	"celestial-talkpage": "Parembugan {{GENDER:$1|naraguna}}",
+	"celestial-pagelog": "Log kaca",
+	"celestial-more": "Liyané",
+	"celestial-sitetools": "Piranti wiki",
+	"celestial-pageactions": "Piranti kaca",
+	"celestial-userpagetools": "Piranti kaca naraguna",
+	"celestial-pagemisc": "Liyané",
+	"celestial-namespaces": "Mandhala aran",
+	"celestial-pagetools": "Laku kaca",
+	"celestial-languages": "Basa"
 }

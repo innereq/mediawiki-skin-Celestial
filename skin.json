@@ -1,53 +1,53 @@
 {
-	"name": "Timeless",
+	"name": "Celestial",
 	"version": "0.9.0",
 	"author": "Isarra Yos",
 	"url": "https://www.mediawiki.org/wiki/Skin:Timeless",
-	"descriptionmsg": "timeless-desc",
-	"namemsg": "skinname-timeless",
+	"descriptionmsg": "celestial-desc",
+	"namemsg": "skinname-celestial",
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
 	"requires": {
 		"MediaWiki": ">= 1.35"
 	},
 	"ValidSkinNames": {
-		"timeless": {
-			"displayname": "Timeless",
-			"class": "SkinTimeless",
+		"celestial": {
+			"displayname": "Celestial",
+			"class": "SkinCelestial",
 			"args": [
 				{
-					"name": "timeless",
+					"name": "celestial",
 					"responsive": true
 				}
 			]
 		}
 	},
 	"MessagesDirs": {
-		"Timeless": [
+		"Celestial": [
 			"i18n"
 		]
 	},
 	"config": {
-		"TimelessBackdropImage": {
+		"CelestialBackdropImage": {
 			"value": "cat.svg",
 			"description": "Set it as you would $wgLogo to an appropriate background image. Recommendation is an svg set to 500-750px wide"
 		},
-		"TimelessLogo": {
+		"CelestialLogo": {
 			"value": null,
-			"description": "Special logo rendering, allowing for custom logos for Timeless"
+			"description": "Special logo rendering, allowing for custom logos for Celestial"
 		},
-		"TimelessWordmark": {
+		"CelestialWordmark": {
 			"value": null,
 			"description": "To use an image instead of the default Linux Libertine serif text for the header banner wordmark"
 		}
 	},
 	"ResourceModules": {
-		"skins.timeless": {
+		"skins.celestial": {
 			"targets": [
 				"desktop",
 				"mobile"
 			],
-			"class": "TimelessVariablesModule",
+			"class": "CelestialVariablesModule",
 			"styles": {
 				"resources/libraries/normalise.css": {
 					"media": "screen"
@@ -80,7 +80,7 @@
 			},
 			"@NOTE": "Remember to also update variables.less if you change the width cutoffs here. screen-misc.less and mobile.js may also need updating."
 		},
-		"skins.timeless.js": {
+		"skins.celestial.js": {
 			"targets": [
 				"desktop"
 			],
@@ -88,7 +88,7 @@
 				"resources/main.js"
 			]
 		},
-		"skins.timeless.mobile": {
+		"skins.celestial.mobile": {
 			"targets": [
 				"desktop",
 				"mobile"
@@ -100,10 +100,10 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "Timeless"
+		"remoteSkinPath": "Celestial"
 	},
 	"ResourceModuleSkinStyles": {
-		"timeless": {
+		"celestial": {
 			"+oojs-ui-core.styles": "resources/ooui.less",
 			"+ext.echo.styles.badge": "resources/extensions/Echo.less",
 			"+ext.eventLogging.jsonSchema.styles": "resources/extensions/EventLogging.jsonSchema.less",
@@ -117,9 +117,9 @@
 		}
 	},
 	"AutoloadClasses": {
-		"SkinTimeless": "includes/SkinTimeless.php",
-		"TimelessTemplate": "includes/TimelessTemplate.php",
-		"TimelessVariablesModule": "includes/TimelessVariablesModule.php"
+		"SkinCelestial": "includes/SkinCelestial.php",
+		"CelestialTemplate": "includes/CelestialTemplate.php",
+		"CelestialVariablesModule": "includes/CelestialVariablesModule.php"
 	},
 	"manifest_version": 2
 }

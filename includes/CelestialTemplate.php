@@ -1,13 +1,13 @@
 <?php
 /**
- * BaseTemplate class for the Timeless skin
+ * BaseTemplate class for the Celestial skin
  *
  * @ingroup Skins
  */
 
 use MediaWiki\MediaWikiServices;
 
-class TimelessTemplate extends BaseTemplate {
+class CelestialTemplate extends BaseTemplate {
 
 	/** @var array */
 	protected $pileOfTools;
@@ -77,11 +77,11 @@ class TimelessTemplate extends BaseTemplate {
 					$this->getMainNavigation() .
 					$this->getSidebarChunk(
 						'site-tools',
-						'timeless-sitetools',
+						'celestial-sitetools',
 						$this->getPortlet(
 							'tb',
 							$this->pileOfTools['general'],
-							'timeless-sitetools'
+							'celestial-sitetools'
 						)
 					)
 				) .
@@ -143,20 +143,20 @@ class TimelessTemplate extends BaseTemplate {
 					$this->getPortlet(
 						'namespaces',
 						$this->pileOfTools['namespaces'],
-						'timeless-namespaces',
+						'celestial-namespaces',
 						[ 'extra-classes' => 'tools-inline' ]
 					) .
 					$this->getPortlet(
 						'more',
 						$this->pileOfTools['more'],
-						'timeless-more',
+						'celestial-more',
 						[ 'extra-classes' => 'tools-inline' ]
 					) .
 					$this->getVariants() .
 					$this->getPortlet(
 						'views',
 						$this->pileOfTools['page-primary'],
-						'timeless-pagetools',
+						'celestial-pagetools',
 						[ 'extra-classes' => 'tools-inline' ]
 					)
 				) .
@@ -482,7 +482,7 @@ class TimelessTemplate extends BaseTemplate {
 		);
 		$logos = ResourceLoaderSkinModule::getAvailableLogos( $config );
 		if ( $part !== 'image' ) {
-			$wordmarkImage = $this->getLogoImage( $config->get( 'TimelessWordmark' ), true );
+			$wordmarkImage = $this->getLogoImage( $config->get( 'CelestialWordmark' ), true );
 			if ( !$wordmarkImage && isset( $logos['wordmark'] ) ) {
 				$wordmarkData = $logos['wordmark'];
 				$wordmarkImage = Html::element( 'img', [
@@ -496,9 +496,9 @@ class TimelessTemplate extends BaseTemplate {
 			$siteTitle = '';
 			if ( !$wordmarkImage ) {
 				if ( $language->hasVariants() ) {
-					$siteTitle = $language->convert( $this->getMsg( 'timeless-sitetitle' )->escaped() );
+					$siteTitle = $language->convert( $this->getMsg( 'celestial-sitetitle' )->escaped() );
 				} else {
-					$siteTitle = $this->getMsg( 'timeless-sitetitle' )->escaped();
+					$siteTitle = $this->getMsg( 'celestial-sitetitle' )->escaped();
 				}
 				// width is 11em; 13 characters will probably fit?
 				if ( mb_strlen( $siteTitle ) > 13 ) {
@@ -517,7 +517,7 @@ class TimelessTemplate extends BaseTemplate {
 
 		}
 		if ( $part !== 'text' ) {
-			$logoImage = $this->getLogoImage( $config->get( 'TimelessLogo' ) );
+			$logoImage = $this->getLogoImage( $config->get( 'CelestialLogo' ) );
 			if ( $logoImage === null && isset( $logos['icon'] ) ) {
 				$logoSrc = $logos['icon'];
 				$logoImage = Html::element( 'img', [
@@ -529,7 +529,7 @@ class TimelessTemplate extends BaseTemplate {
 				'a',
 				array_merge(
 					[
-						'class' => [ 'mw-wiki-logo', !$logoImage ? 'fallback' : 'timeless-logo' ],
+						'class' => [ 'mw-wiki-logo', !$logoImage ? 'fallback' : 'celestial-logo' ],
 						'href' => $this->data['nav_urls']['mainpage']['href']
 					],
 					Linker::tooltipAndAccesskeyAttribs( 'p-logo' )
@@ -650,17 +650,17 @@ class TimelessTemplate extends BaseTemplate {
 		$pageTools .= $this->getPortlet(
 			'cactions',
 			$this->pileOfTools['page-secondary'],
-			'timeless-pageactions'
+			'celestial-pageactions'
 		);
 		$pageTools .= $this->getPortlet(
 			'userpagetools',
 			$this->pileOfTools['user'],
-			'timeless-userpagetools'
+			'celestial-userpagetools'
 		);
 		$pageTools .= $this->getPortlet(
 			'pagemisc',
 			$this->pileOfTools['page-tertiary'],
-			'timeless-pagemisc'
+			'celestial-pagemisc'
 		);
 		if ( isset( $this->collectionPortlet ) ) {
 			$pageTools .= $this->getPortlet(
@@ -669,7 +669,7 @@ class TimelessTemplate extends BaseTemplate {
 			);
 		}
 
-		return $this->getSidebarChunk( 'page-tools', 'timeless-pageactions', $pageTools );
+		return $this->getSidebarChunk( 'page-tools', 'celestial-pageactions', $pageTools );
 	}
 
 	/**
@@ -705,19 +705,19 @@ class TimelessTemplate extends BaseTemplate {
 
 		// Re-label some messages
 		if ( isset( $personalTools['userpage'] ) ) {
-			$personalTools['userpage']['links'][0]['text'] = $this->getMsg( 'timeless-userpage' )->text();
+			$personalTools['userpage']['links'][0]['text'] = $this->getMsg( 'celestial-userpage' )->text();
 		}
 		if ( isset( $personalTools['mytalk'] ) ) {
-			$personalTools['mytalk']['links'][0]['text'] = $this->getMsg( 'timeless-talkpage' )->text();
+			$personalTools['mytalk']['links'][0]['text'] = $this->getMsg( 'celestial-talkpage' )->text();
 		}
 
 		// Labels
 		if ( $user->isLoggedIn() ) {
 			$dropdownHeader = $userName;
-			$headerMsg = [ 'timeless-loggedinas', $userName ];
+			$headerMsg = [ 'celestial-loggedinas', $userName ];
 		} else {
-			$dropdownHeader = $this->getMsg( 'timeless-anonymous' )->text();
-			$headerMsg = 'timeless-notloggedin';
+			$dropdownHeader = $this->getMsg( 'celestial-anonymous' )->text();
+			$headerMsg = 'celestial-notloggedin';
 		}
 		$html .= Html::openElement( 'div', [ 'id' => 'user-tools' ] );
 
@@ -859,7 +859,7 @@ class TimelessTemplate extends BaseTemplate {
 		$pileOfTools = $this->sidebar['TOOLBOX'];
 		if ( $namespace >= 0 ) {
 			$pileOfTools['pagelog'] = [
-				'text' => $this->getMsg( 'timeless-pagelog' )->text(),
+				'text' => $this->getMsg( 'celestial-pagelog' )->text(),
 				'href' => SpecialPage::getTitleFor( 'Log' )->getLocalURL(
 					[ 'page' => $title->getPrefixedText() ]
 				),
@@ -869,7 +869,7 @@ class TimelessTemplate extends BaseTemplate {
 
 		// Mobile toggles
 		$pileOfTools['more'] = [
-			'text' => $this->getMsg( 'timeless-more' )->text(),
+			'text' => $this->getMsg( 'celestial-more' )->text(),
 			'id' => 'ca-more',
 			'class' => 'dropdown-toggle'
 		];
@@ -877,7 +877,7 @@ class TimelessTemplate extends BaseTemplate {
 		if ( $this->sidebar['LANGUAGES'] !== false || $sortedPileOfTools['variants']
 			|| isset( $this->otherProjects ) ) {
 			$pileOfTools['languages'] = [
-				'text' => $this->getMsg( 'timeless-languages' )->escaped(),
+				'text' => $this->getMsg( 'celestial-languages' )->escaped(),
 				'id' => 'ca-languages',
 				'class' => 'dropdown-toggle'
 			];
@@ -1120,7 +1120,7 @@ class TimelessTemplate extends BaseTemplate {
 		if ( $show ) {
 			$html .= $this->getSidebarChunk(
 				'other-languages',
-				'timeless-projects',
+				'celestial-projects',
 				$variants . $languages . $otherprojects,
 				$variantsOnly ? [ 'variants-only' ] : []
 			);

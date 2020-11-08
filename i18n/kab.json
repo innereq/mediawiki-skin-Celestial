@@ -4,18 +4,18 @@
 			"Belkacem77"
 		]
 	},
-	"timeless-anonymous": "Udrig",
-	"timeless-loggedinas": "Yeqqen s \"$1\"",
-	"timeless-notloggedin": "Ur yeqqin ara",
-	"timeless-userpage": "Asebter n {{GENDER:$1|useqdac}}",
-	"timeless-talkpage": "Asqerdec n {{GENDER:$1|useqdac}}",
-	"timeless-pagelog": "Iɣmisen n usebter",
-	"timeless-more": "Ugar",
-	"timeless-sitetools": "Ifecka Wiki",
-	"timeless-pageactions": "Ifecka n usebter",
-	"timeless-userpagetools": "Ifecka n usebter n useqdac",
-	"timeless-pagemisc": "Ugar",
-	"timeless-namespaces": "Tallunin n isemawen",
-	"timeless-pagetools": "Tigawin n usebter",
-	"timeless-languages": "Tutlayin"
+	"celestial-anonymous": "Udrig",
+	"celestial-loggedinas": "Yeqqen s \"$1\"",
+	"celestial-notloggedin": "Ur yeqqin ara",
+	"celestial-userpage": "Asebter n {{GENDER:$1|useqdac}}",
+	"celestial-talkpage": "Asqerdec n {{GENDER:$1|useqdac}}",
+	"celestial-pagelog": "Iɣmisen n usebter",
+	"celestial-more": "Ugar",
+	"celestial-sitetools": "Ifecka Wiki",
+	"celestial-pageactions": "Ifecka n usebter",
+	"celestial-userpagetools": "Ifecka n usebter n useqdac",
+	"celestial-pagemisc": "Ugar",
+	"celestial-namespaces": "Tallunin n isemawen",
+	"celestial-pagetools": "Tigawin n usebter",
+	"celestial-languages": "Tutlayin"
 }

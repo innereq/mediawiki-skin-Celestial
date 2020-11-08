@@ -2,7 +2,7 @@
 /**
  * ResourceLoader module to set some LESS variables for the skin
  */
-class TimelessVariablesModule extends ResourceLoaderSkinModule {
+class CelestialVariablesModule extends ResourceLoaderSkinModule {
 	/**
 	 * Add our LESS variables
 	 *
@@ -14,7 +14,7 @@ class TimelessVariablesModule extends ResourceLoaderSkinModule {
 		$config = $this->getConfig();
 
 		// Backdrop image
-		$backdrop = $config->get( 'TimelessBackdropImage' );
+		$backdrop = $config->get( 'CelestialBackdropImage' );
 
 		if ( $backdrop === 'cat.svg' ) {
 			// expand default
@@ -43,7 +43,7 @@ class TimelessVariablesModule extends ResourceLoaderSkinModule {
 	public function getDefinitionSummary( ResourceLoaderContext $context ) {
 		$summary = parent::getDefinitionSummary( $context );
 		$summary[] = [
-			'TimelessBackdropImage' => $this->getConfig()->get( 'TimelessBackdropImage' )
+			'CelestialBackdropImage' => $this->getConfig()->get( 'CelestialBackdropImage' )
 		];
 		return $summary;
 	}

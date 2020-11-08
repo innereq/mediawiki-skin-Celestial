@@ -4,18 +4,18 @@
 			"Nirajan pant"
 		]
 	},
-	"timeless-anonymous": "अनाम",
-	"timeless-loggedinas": "'''$1'''का रूपमी लगइन",
-	"timeless-notloggedin": "प्रवेश (लग ईन) नगर्याको",
-	"timeless-userpage": "{{GENDER:$1|प्रयोगकर्ता}} पन्ना",
-	"timeless-talkpage": "{{GENDER:$1|प्रयोगकर्ता}} कुरणिकानी",
-	"timeless-pagelog": "पेज इतिहास",
-	"timeless-more": "झिक्क",
-	"timeless-sitetools": "विकि औजारअन",
-	"timeless-pageactions": "पन्ना औजारअन",
-	"timeless-userpagetools": "प्रयोकर्तापन्ना औजारअन",
-	"timeless-pagemisc": "झिक्क",
-	"timeless-namespaces": "नामठौरअन",
-	"timeless-pagetools": "पन्ना क्रियाअन",
-	"timeless-languages": "भाषाअन"
+	"celestial-anonymous": "अनाम",
+	"celestial-loggedinas": "'''$1'''का रूपमी लगइन",
+	"celestial-notloggedin": "प्रवेश (लग ईन) नगर्याको",
+	"celestial-userpage": "{{GENDER:$1|प्रयोगकर्ता}} पन्ना",
+	"celestial-talkpage": "{{GENDER:$1|प्रयोगकर्ता}} कुरणिकानी",
+	"celestial-pagelog": "पेज इतिहास",
+	"celestial-more": "झिक्क",
+	"celestial-sitetools": "विकि औजारअन",
+	"celestial-pageactions": "पन्ना औजारअन",
+	"celestial-userpagetools": "प्रयोकर्तापन्ना औजारअन",
+	"celestial-pagemisc": "झिक्क",
+	"celestial-namespaces": "नामठौरअन",
+	"celestial-pagetools": "पन्ना क्रियाअन",
+	"celestial-languages": "भाषाअन"
 }

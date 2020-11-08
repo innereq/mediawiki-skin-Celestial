@@ -5,9 +5,9 @@
 			"Ninjastrikers"
 		]
 	},
-	"timeless-notloggedin": "အကောင့် မဝင်ထားပါ",
-	"timeless-userpage": "{{GENDER:$1|အသုံးပြု}} စာမျက်နှာ",
-	"timeless-more": "ပို၍",
-	"timeless-pagemisc": "ပို၍",
-	"timeless-namespaces": "အမည်ညွှန်းများ"
+	"celestial-notloggedin": "အကောင့် မဝင်ထားပါ",
+	"celestial-userpage": "{{GENDER:$1|အသုံးပြု}} စာမျက်နှာ",
+	"celestial-more": "ပို၍",
+	"celestial-pagemisc": "ပို၍",
+	"celestial-namespaces": "အမည်ညွှန်းများ"
 }
