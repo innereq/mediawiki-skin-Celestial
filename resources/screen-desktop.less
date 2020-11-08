@@ -28,24 +28,18 @@ div.mw-notification-area {
 
 #mw-header {
 	.flex-display;
+	align-items: center;
+	padding: 0.5em;
 }
 
 #mw-header-container {
-	/* Stupid IE10+ bug requires defining the height property for this to work
-	 * the way it is intended; without doing that this'll break horribly under
-	 * IE10 and IE11.
-	 * @see https://phabricator.wikimedia.org/T173769
-	 */
-	height: 0;
-	position: fixed;
 	z-index: 100;
 	top: 0;
 	width: 100%;
 	background: @background;
 	color: @text;
-	padding: 0.5em 0 0;
-	min-height: @fixed-header-height;
 	box-sizing: border-box;
+	border-bottom: solid 1px @base80;
 }
 
 #p-logo-text {
@@ -195,11 +189,4 @@ div.mw-notification-area {
 #mw-page-header-links #p-more,
 .sidebar-chunk h2 {
 	display: none;
-}
-
-/* Content */
-
-#mw-content-container {
-	margin-top: @fixed-header-height + @color-height;
-	padding-bottom: 1em;
 }
