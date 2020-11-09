@@ -11,16 +11,7 @@
 		"MediaWiki": ">= 1.35"
 	},
 	"ValidSkinNames": {
-		"celestial": {
-			"displayname": "Celestial",
-			"class": "SkinCelestial",
-			"args": [
-				{
-					"name": "celestial",
-					"responsive": true
-				}
-			]
-		}
+		"celestial": "Celestial"
 	},
 	"MessagesDirs": {
 		"Celestial": [
