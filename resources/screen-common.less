@@ -189,7 +189,7 @@ body {
 
 .tools-inline li {
 	margin: 0.25em 0 1em;
-	border-bottom: solid 3px transparent;
+	border-bottom: solid 2px transparent;
 
 	&:hover {
 		border-bottom-color: @base70;
@@ -449,17 +449,14 @@ pre,
 
 	h1.firstHeading {
 		margin: 0.25em 0 0.5em;
-		border-bottom: solid 4px @blue;
 	}
 
 	h1 {
 		font-size: 2em;
-		border-bottom: solid 3px @base70;
 	}
 
 	h2 {
 		font-size: 1.8em;
-		border-bottom: solid 2px @base70;
 	}
 
 	h3 {
@@ -478,6 +475,10 @@ pre,
 		font-size: 1.2em;
 	}
 
+	h1, h1.firstHeading, h2 {
+		border-bottom: solid 1px @borderline;
+	}
+
 	dt {
 		margin-top: 1em;
 	}
@@ -492,28 +493,6 @@ pre,
 
 	.mw-changeslist-legend dd {
 		margin-bottom: 0;
-	}
-
-	/* overflow:hidden on the header itself breaks tall scripts, but we need to hide
-	 * overflow on the border itself in output for proper thumb handling. Too weird to
-	 * change this everywhere, so we'll just do it for parser output for now.
-	 */
-	.mw-parser-output {
-		h1,
-		h2 {
-			border-bottom: 0;
-
-			&:after {
-				content: '';
-				display: block;
-				border-bottom: solid 2px @base70;
-				overflow: hidden;
-			}
-		}
-
-		h1:after {
-			border-bottom-width: 3px;
-		}
 	}
 }
 
@@ -631,13 +610,14 @@ ul#filetoc {
 }
 
 .mw-body .toctitle {
-	border-bottom: solid 2px @base70;
+	border-bottom: solid 1px @borderline;
 
 	h2 {
 		font-size: 1em;
 		font-family: @fonts;
 		margin: 0;
 		display: inline;
+		border: none;
 
 		&:after {
 			display: none;
@@ -722,10 +702,6 @@ body :not( :checked ) > .toctogglespan:after {
 
 #p-lang.emptyPortlet {
 	display: inherit;
-}
-
-#mw-site-navigation .sidebar-chunk h3, #mw-related-navigation .sidebar-chunk h3 {
-	font-family: @fonts-serif;
 }
 
 /* Hidden stuff */
