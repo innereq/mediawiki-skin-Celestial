@@ -1,3 +1,5 @@
+# Celestial
+
 Bloat-free fork of Timeless skin for MediaWiki.
 
 - Tries to be more neutral.
