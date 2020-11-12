@@ -50,12 +50,10 @@
 	background: @red-dark;
 }
 
-// Have these cover the fixed header color-bar using the mw-header-nav-hack (with its own color-bar at the bottom)
 #mw-site-navigation,
 #mw-related-navigation {
 	display: inline-block;
 	position: relative;
-	z-index: 99;
 
 	h2 {
 		font-weight: normal;
@@ -72,15 +70,6 @@
 	.sidebar-inner {
 		display: block !important;
 	}
-}
-
-#mw-header-nav-hack {
-	border-top: solid 2px @base80;
-	display: block;
-	position: absolute;
-	z-index: 98;
-	background: @background;
-	width: 100%;
 }
 
 #mw-site-navigation {
